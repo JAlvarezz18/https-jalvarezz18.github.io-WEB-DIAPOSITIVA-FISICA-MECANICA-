@@ -1,0 +1,416 @@
+:root {
+    --tx-color: rgb(6, 5, 29);
+    --tx-color-title: rgb(192, 189, 189);
+    --tx-color-2: #F79F1F;
+    --bg-color-main: #222;
+    --box-shadow: 0 0rem 1.5rem rgb(247, 162, 34, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 100vh;
+}
+
+/* nav  */
+
+.nav .container {
+    height: 100%;
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px; left: 0%;
+}
+.nav .container .lista li {
+    border-bottom: 1px solid var(--tx-color);
+}
+
+.nav .container .logo {
+    position: absolute;
+    top: 8%;
+}
+
+.nav .container .logo a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--tx-color);
+}
+
+.nav .container .logo a::before {
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    border-left: 4px solid var(--tx-color-2);
+    border-bottom: 4px solid var(--tx-color-2);
+}
+
+.nav .container .logo a::after {
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-right: 4px solid var(--tx-color);
+    border-top: 4px solid var(--tx-color);
+}
+
+.nav .container .logo a span{
+    color: var(--tx-color-2);
+}
+
+.nav .container .lista {
+    margin-top: 8%;
+}
+
+.nav .container .lista li {
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.nav .container .lista li:hover {
+    border-radius: .2rem;
+    background: var(--bg-color-main);
+}
+
+.nav .container .lista li a {
+    display: block;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    color: var(--tx-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav .container .lista li:hover a {
+    color: var(--tx-color-2);
+}
+
+.nav .container .lista li a i {
+    color: var(--tx-color-2);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+/* main  */
+
+
+.main .container {
+    background: var(--bg-color-main);
+    min-height: 100vh;
+    padding: 2rem;
+    border-bottom: .1rem solid var(--tx-color-2);
+}
+
+/* main presentacion  */
+
+.main .presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: var(--tx-color-title);
+    font-weight: 700;
+    font-size: 2rem;
+    position: absolute;
+    letter-spacing: .1rem;
+    top: 2rem;
+}
+
+.title::before {
+    content: '';
+    width: 7rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: 0;
+}
+
+.title::after {
+    content: '';
+    width: 3.5rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    margin-top: 12rem;
+}
+
+.main .presentacion .img img{
+    position: fixed;
+    width: 5%;
+    height: 11%;
+    object-fit: cover;
+    top: 2rem;
+    right: 2rem;
+}
+
+.main .presentacion .presentacion-t {
+    width: 100%;
+    padding: 1rem;
+}
+
+.main .presentacion .presentacion-t .tema h2 {
+    color: var(--tx-color-2);
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+
+.main .presentacion .presentacion-t .tema h2 span {
+    color: var(--tx-color-title);
+}
+
+.main .presentacion .presentacion-t .inte {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main .presentacion .presentacion-t h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--tx-color-title);
+    margin-bottom: 2rem;
+}
+
+.main .presentacion .presentacion-t .inte .inte-1 {
+    color: var(--tx-color-title);
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .presentacion .presentacion-t .inte .inte-1 .img-1 {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .presentacion .presentacion-t .inte .inte-1 .img-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+/* historia  */
+
+.title-2 {
+    color: var(--tx-color-title);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.title-2::before {
+    content: '';
+    width: 7rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: 0;
+}
+
+.title-2::after {
+    content: '';
+    width: 3.5rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    margin-top: 12rem;
+}
+
+.main .historia .contenedor .histo .text .des {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.main .historia .contenedor .histo .text .des .nom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main .historia .contenedor .histo .text .des .nom h2{
+    color: var(--tx-color-title);
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.main .historia .contenedor .histo .text .des .nom h3{
+    color: var(--tx-color-2);
+    font-size: 2rem;
+    padding: 0 0 2rem 0;
+}
+
+.main .historia .contenedor .histo .text .des .img {
+    margin: auto;
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .historia .contenedor .histo .text .des .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.main .historia .contenedor .histo .info .info-i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .historia .contenedor .histo .info .info-i h2{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    color: var(--tx-color-2);
+    padding-bottom: 1rem;
+}
+
+.main .historia .contenedor .histo .info .info-i p {
+    text-align: justify;
+    color: var(--tx-color-title);
+    font-size: 1.09rem;
+}
+
+.main .historia .contenedor .histo .info .info-i .img {
+    margin-top: 2rem;
+    width: 65%;
+    height: 15rem;
+}
+
+.main .historia .contenedor .histo .info .info-i .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .formas .sub-title h2 {
+    color: var(--tx-color-2);
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 h3 {
+    color: var(--tx-color-2);
+    padding-bottom: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 p {
+    text-align: justify;
+    color: var(--tx-color-title);
+    font-size: 1.09rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll .img {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll .img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 {
+    min-width: 20rem;
+    max-width: 50rem;
+    height: 100%;
+    margin: auto;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll h3 {
+    color: var(--tx-color-2);
+    padding-bottom: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll p {
+    text-align: justify;
+    color: var(--tx-color-title);
+    font-size: 1.09rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll .img {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll .img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
