@@ -1,0 +1,1 @@
+# https-jalvarezz18.github.io-WEB-DIAPOSITIVA-FISICA-MECANICA-
