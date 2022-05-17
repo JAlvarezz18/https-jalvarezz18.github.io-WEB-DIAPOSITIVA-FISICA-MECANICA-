@@ -1,9 +1,10 @@
 :root {
     --tx-color: rgb(6, 5, 29);
-    --tx-color-title: rgb(192, 189, 189);
+    --tx-color-title: #c0bdbd;
+    --tx-color-p: #ffffff;
     --tx-color-2: #F79F1F;
     --bg-color-main: #222;
-    --box-shadow: 0 0rem 1.5rem rgb(247, 162, 34, 0.4);
+    --box-shadow: 0 0rem 1.5rem rgba(247, 162, 34, 0.4);
 }
 
 * {
@@ -167,6 +168,7 @@
 .main .presentacion .presentacion-t {
     width: 100%;
     padding: 1rem;
+    margin-top: 2.3rem;
 }
 
 .main .presentacion .presentacion-t .tema h2 {
@@ -330,7 +332,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.main .historia .contenedor .histo .text .formas .sub-title h2 {
+.sub-title h2 {
     color: var(--tx-color-2);
     font-size: 1.9rem;
     text-align: center;
@@ -413,4 +415,104 @@
     width: 100%;
     height: 100%;
     box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas {
+    background: var(--tx-color-2);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas span {
+    color: var(--tx-color-p);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--bg-color-main);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: .5rem;
+    text-align: center;
+    color: var(--tx-color);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    text-align: left;
+    color: var(--bg-color-main);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--tx-color);
+    margin-bottom: .2rem;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h5:last-child {
+    margin-bottom: 0;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio {
+    background: var(--tx-color-2);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio span {
+    color: var(--tx-color);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio p {
+    color: var(--tx-color);
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--bg-color-main);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--tx-color-p);
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--bg-color-main);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h4 span {
+    color: var(--tx-color-p);
+    font-weight: 600;
+    font-size: 1.7rem;
 }
