@@ -562,36 +562,31 @@
 
 .main .conclusion .contenido .conclusion-1 {
     grid-area: conclusion-1;
-    transform: scale(1.4);
 }
 
-.main .conclusion .contenido .conclusion-1:hover {
-    transform: scale(1.6);
-}
 
 .main .conclusion .contenido .conclusion-2 {
     grid-area: conclusion-2;
-    transform: scale(1.4);
-}
-
-.main .conclusion .contenido .conclusion-2:hover {
-    transform: scale(1.6);
 }
 
 .main .conclusion .contenido .conclusion-3 {
     grid-area: conclusion-3;
-    transform: scale(1.4);
-}
-
-.main .conclusion .contenido .conclusion-3:hover {
-    transform: scale(1.6);
 }
 
 .main .conclusion .contenido .conclusion-4 {
     grid-area: conclusion-4;
-    transform: scale(1.4);
 }
 
+.main .conclusion .contenido .conclusion-1,
+.main .conclusion .contenido .conclusion-2,
+.main .conclusion .contenido .conclusion-3,
+.main .conclusion .contenido .conclusion-4 {
+    transform: scale(1.5);
+}
+
+.main .conclusion .contenido .conclusion-1:hover,
+.main .conclusion .contenido .conclusion-2:hover,
+.main .conclusion .contenido .conclusion-3:hover,
 .main .conclusion .contenido .conclusion-4:hover {
     transform: scale(1.6);
 }
