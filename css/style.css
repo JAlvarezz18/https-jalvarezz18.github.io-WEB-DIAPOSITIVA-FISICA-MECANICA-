@@ -1,11 +1,14 @@
+
 :root {
-    --tx-color: rgb(6, 5, 29);
+    --tx-color: rgb(0, 0, 0);
     --tx-color-title: #c0bdbd;
     --tx-color-p: #ffffff;
-    --tx-color-2: #F79F1F;
-    --bg-color-main: #222;
-    --box-shadow: 0 0rem 1.5rem rgba(247, 162, 34, 0.4);
+    --tx-color-3: rgb(0, 0, 0);
+    --tx-color-2: #FF0000;
+    --bg-color-main: #000000;
+    --box-shadow: 0 0rem 1.5rem rgba(149, 1, 1, 0.5);
 }
+
 
 * {
     margin: 0;
@@ -117,7 +120,6 @@
     background: var(--bg-color-main);
     min-height: 100vh;
     padding: 2rem;
-    border-bottom: .1rem solid var(--tx-color-2);
 }
 
 /* main presentacion  */
@@ -426,7 +428,7 @@
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas {
-    background: var(--tx-color-2);
+    background: var(--tx-color-3);
     padding: .5rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
@@ -440,7 +442,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-align: left;
-    color: var(--bg-color-main);
+    color: var(--tx-color-2);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas p {
@@ -448,7 +450,7 @@
     font-weight: 400;
     padding: .5rem;
     text-align: center;
-    color: var(--tx-color);
+    color: var(--tx-color-title);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h4 {
@@ -456,14 +458,14 @@
     font-weight: 600;
     padding-bottom: .5rem;
     text-align: left;
-    color: var(--bg-color-main);
+    color: var(--tx-color-2);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h5 {
     font-size: 1.1rem;
     font-weight: 400;
     text-align: justify;
-    color: var(--tx-color);
+    color: var(--tx-color-title);
     margin-bottom: .2rem;
 }
 
@@ -472,18 +474,18 @@
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio {
-    background: var(--tx-color-2);
+    background: var(--tx-color-3);
     padding: .5rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio span {
-    color: var(--tx-color);
+    color: var(--tx-color-title);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio p {
-    color: var(--tx-color);
+    color: var(--tx-color-title);
     font-size: 1.3rem;
     margin-bottom: .5rem;
 }
@@ -492,7 +494,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-align: left;
-    color: var(--bg-color-main);
+    color: var(--tx-color-2);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h5 {
@@ -509,7 +511,7 @@
     font-size: 1.4rem;
     font-weight: 600;
     text-align: left;
-    color: var(--bg-color-main);
+    color: var(--tx-color-2);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h4 span {
@@ -529,7 +531,7 @@
 }
 
 .main .conclusion .contenido .conclusion {
-    background: var(--tx-color-2);
+    background: var(--bg-color-main);
     padding: 13%;
     border-radius: 50%;
     width: 11rem;
@@ -557,7 +559,7 @@
     text-align: justify;
     font-size: .62rem;
     font-weight: 600;
-    color: var(--bg-color-main);
+    color: var(--tx-color-title);
 }
 
 .main .conclusion .contenido .conclusion-1 {
@@ -589,4 +591,32 @@
 .main .conclusion .contenido .conclusion-3:hover,
 .main .conclusion .contenido .conclusion-4:hover {
     transform: scale(1.6);
+}
+
+.main .despedida {
+    background-image: url("/img/11-despedida.jpg");
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .despedida .fin {
+    padding: 2rem;
+    background-color: var(--bg-color-main);
+    width: 45rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .6rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main .despedida .fin h1 {
+    font-size: 2.5rem;
+    color: var(--tx-color-title);
+    font-weight: 600;
 }
