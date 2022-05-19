@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200&display=swap');
+
+:root {
+    --tx-color: rgb(0, 0, 0);
+    --tx-color-title: #c0bdbd;
+    --tx-color-p: #ffffff;
+    --tx-color-3: rgb(0, 0, 0);
+    --tx-color-2: #FF0000;
+    --bg-color-main: #000000;
+    --box-shadow: 0 0rem 1.5rem rgba(149, 1, 1, 0.5);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* nav  */
+
+.nav .container {
+    height: 100%;
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0px; left: 0%;
+}
+.nav .container .lista li {
+    border-bottom: 1px solid var(--tx-color);
+}
+
+.nav .container .logo {
+    position: absolute;
+    top: 8%;
+}
+
+.nav .container .logo a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--tx-color);
+}
+
+.nav .container .logo a::before {
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    border-left: 4px solid var(--tx-color-2);
+    border-bottom: 4px solid var(--tx-color-2);
+}
+
+.nav .container .logo a::after {
+    content: '';
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-right: 4px solid var(--tx-color);
+    border-top: 4px solid var(--tx-color);
+}
+
+.nav .container .logo a span{
+    color: var(--tx-color-2);
+}
+
+.nav .container .lista {
+    margin-top: 8%;
+}
+
+.nav .container .lista li {
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.nav .container .lista li:hover {
+    border-radius: .2rem;
+    background: var(--bg-color-main);
+}
+
+.nav .container .lista li a {
+    display: block;
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    color: var(--tx-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav .container .lista li:hover a {
+    color: var(--tx-color-2);
+}
+
+.nav .container .lista li a i {
+    color: var(--tx-color-2);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+/* main  */
+
+
+.main .container {
+    background: var(--bg-color-main);
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* main presentacion  */
+
+.main .presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    color: var(--tx-color-title);
+    font-weight: 700;
+    font-size: 2rem;
+    position: absolute;
+    letter-spacing: .1rem;
+    top: 2rem;
+}
+
+.title::before {
+    content: '';
+    width: 7rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: 0;
+}
+
+.title::after {
+    content: '';
+    width: 3.5rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    margin-top: 12rem;
+}
+
+.main .presentacion .img img{
+    position: fixed;
+    width: 5%;
+    height: 11%;
+    object-fit: cover;
+    top: 2rem;
+    right: 2rem;
+}
+
+.main .presentacion .presentacion-t {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2.3rem;
+}
+
+.main .presentacion .presentacion-t .tema h2 {
+    color: var(--tx-color-2);
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
+}
+
+.main .presentacion .presentacion-t .tema h2 span {
+    color: var(--tx-color-title);
+}
+
+.main .presentacion .presentacion-t .inte {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.main .presentacion .presentacion-t h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--tx-color-title);
+    margin-bottom: 2rem;
+}
+
+.main .presentacion .presentacion-t .inte .inte-1 {
+    color: var(--tx-color-title);
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .presentacion .presentacion-t .inte .inte-1 .img-1 {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .presentacion .presentacion-t .inte .inte-1 .img-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+/* historia  */
+
+.title-2 {
+    color: var(--tx-color-title);
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.title-2::before {
+    content: '';
+    width: 7rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: 0;
+}
+
+.title-2::after {
+    content: '';
+    width: 3.5rem;
+    height: .2rem;
+    background: var(--tx-color-2);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    margin-top: 12rem;
+}
+
+.main .historia .contenedor .histo .text .des {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.main .historia .contenedor .histo .text .des .nom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main .historia .contenedor .histo .text .des .nom h2{
+    color: var(--tx-color-title);
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.main .historia .contenedor .histo .text .des .nom h3{
+    color: var(--tx-color-2);
+    font-size: 2rem;
+    padding: 0 0 2rem 0;
+}
+
+.main .historia .contenedor .histo .text .des .img {
+    margin: auto;
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .historia .contenedor .histo .text .des .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.main .historia .contenedor .histo .info .info-i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .historia .contenedor .histo .info .info-i h2{
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    color: var(--tx-color-2);
+    padding-bottom: 1rem;
+}
+
+.main .historia .contenedor .histo .info .info-i p {
+    text-align: justify;
+    color: var(--tx-color-title);
+    font-size: 1.09rem;
+}
+
+.main .historia .contenedor .histo .info .info-i .img {
+    margin-top: 2rem;
+    width: 65%;
+    height: 15rem;
+}
+
+.main .historia .contenedor .histo .info .info-i .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: var(--box-shadow);
+}
+
+.sub-title h2 {
+    color: var(--tx-color-2);
+    font-size: 1.9rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 10rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 h3 {
+    color: var(--tx-color-2);
+    padding-bottom: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 p {
+    text-align: justify;
+    color: var(--tx-color-title);
+    font-size: 1.09rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll .img {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll .img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 {
+    min-width: 20rem;
+    max-width: 50rem;
+    height: 100%;
+    margin: auto;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll h3 {
+    color: var(--tx-color-2);
+    padding-bottom: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll p {
+    text-align: justify;
+    color: var(--tx-color-title);
+    font-size: 1.09rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll .img {
+    width: 25rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.main .historia .contenedor .histo .text .formas .info .info-3 .infoAll .img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas {
+    background: var(--tx-color-3);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas span {
+    color: var(--tx-color-p);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--tx-color-2);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: .5rem;
+    text-align: center;
+    color: var(--tx-color-title);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    text-align: left;
+    color: var(--tx-color-2);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--tx-color-title);
+    margin-bottom: .2rem;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h5:last-child {
+    margin-bottom: 0;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio {
+    background: var(--tx-color-3);
+    padding: .5rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio span {
+    color: var(--tx-color-title);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio p {
+    color: var(--tx-color-title);
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--tx-color-2);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h5 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--tx-color-p);
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--tx-color-2);
+}
+
+.main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h4 span {
+    color: var(--tx-color-p);
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.main .conclusion .contenido {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:". conclusion-1 . "
+                        "conclusion-2 . conclusion-3"
+                        ". conclusion-4 . ";
+    justify-content: space-evenly;
+}
+
+.main .conclusion .contenido .conclusion {
+    background: var(--bg-color-main);
+    padding: 13%;
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.main .conclusion .contenido .conclusion h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--tx-color-p);
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+}
+
+.main .conclusion .contenido .conclusion p {
+    padding-top: 1rem;
+    text-align: justify;
+    font-size: .62rem;
+    font-weight: 600;
+    color: var(--tx-color-title);
+}
+
+.main .conclusion .contenido .conclusion-1 {
+    grid-area: conclusion-1;
+}
+
+
+.main .conclusion .contenido .conclusion-2 {
+    grid-area: conclusion-2;
+}
+
+.main .conclusion .contenido .conclusion-3 {
+    grid-area: conclusion-3;
+}
+
+.main .conclusion .contenido .conclusion-4 {
+    grid-area: conclusion-4;
+}
+
+.main .conclusion .contenido .conclusion-1,
+.main .conclusion .contenido .conclusion-2,
+.main .conclusion .contenido .conclusion-3,
+.main .conclusion .contenido .conclusion-4 {
+    transform: scale(1.5);
+}
+
+.main .conclusion .contenido .conclusion-1:hover,
+.main .conclusion .contenido .conclusion-2:hover,
+.main .conclusion .contenido .conclusion-3:hover,
+.main .conclusion .contenido .conclusion-4:hover {
+    transform: scale(1.6);
+}
+
+.main .despedida {
+    background-image: url("/img/11-despedida.jpg");
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .despedida .fin {
+    padding: 2rem;
+    background-color: var(--bg-color-main);
+    width: 45rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .6rem;
+    box-shadow: var(--box-shadow);
+}
+
+.main .despedida .fin h1 {
+    font-size: 2.5rem;
+    color: var(--tx-color-title);
+    font-weight: 600;
+}
