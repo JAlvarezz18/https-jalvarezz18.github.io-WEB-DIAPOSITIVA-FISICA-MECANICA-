@@ -39,12 +39,14 @@
     position: fixed;
     top: 0px; left: 0%;
 }
+
 .nav .container .lista li {
     border-bottom: 1px solid var(--tx-color);
 }
 
 .nav .container .logo {
     position: absolute;
+    text-align: center;
     top: 8%;
 }
 
@@ -64,6 +66,7 @@
     left: -20px;
     border-left: 4px solid var(--tx-color-2);
     border-bottom: 4px solid var(--tx-color-2);
+    transform: translateX(5px);
 }
 
 .nav .container .logo a::after {
@@ -75,6 +78,7 @@
     right: -20px;
     border-right: 4px solid var(--tx-color);
     border-top: 4px solid var(--tx-color);
+    transform: translateX(-5px);
 }
 
 .nav .container .logo a span{
@@ -521,6 +525,33 @@
     font-size: 1.7rem;
 }
 
+/* desarrollo  */
+
+.main .desarrollo .contenedor .VyD .venYdes ul li{
+    color: var(--tx-color-title);
+    list-style: circle;
+    font-size: 1.4rem;
+}
+
+.main .desarrollo .contenedor .aplicaciones .contenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.main .desarrollo .contenedor .aplicaciones .contenido .apli {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .desarrollo .contenedor .aplicaciones .contenido .apli p {
+    color: var(--tx-color-title);
+}
+
+/* conclusion  */
+
 .main .conclusion .contenido {
     width: 100%;
     height: 100vh;
@@ -598,7 +629,7 @@
     background-image: url("/img/11-despedida.jpg");
     border: none;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -621,3 +652,5 @@
     color: var(--tx-color-title);
     font-weight: 600;
 }
+
+/* @media (max-width: ) */
