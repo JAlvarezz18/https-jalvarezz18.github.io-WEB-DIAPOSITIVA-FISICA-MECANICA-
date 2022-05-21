@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Clicker+Script&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,900&display=swap');
 
 :root {
     --tx-color: rgb(0, 0, 0);
@@ -24,6 +24,7 @@
     grid-template-columns: 20% 80%;
     min-height: 100vh;
     overflow: hidden;
+    font-family: 'Amatic SC';
 }
 
 /* nav  */
@@ -42,6 +43,7 @@
 
 .nav .container .lista li {
     border-bottom: 1px solid var(--tx-color);
+    font-family: 'Roboto Serif';
 }
 
 .nav .container .logo {
@@ -106,6 +108,7 @@
     color: var(--tx-color);
     font-weight: 500;
     font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .nav .container .lista li:hover a {
@@ -142,6 +145,8 @@
     position: absolute;
     letter-spacing: .1rem;
     top: 2rem;
+    font-family: 'Roboto Serif';
+    font-weight: 700;
 }
 
 .title::before {
@@ -238,6 +243,8 @@
     letter-spacing: .1rem;
     position: relative;
     margin-bottom: 2rem;
+    font-weight: 700;
+    font-family: 'Roboto Serif';
 }
 
 .title-2::before {
@@ -316,7 +323,7 @@
 .main .historia .contenedor .histo .info .info-i h2{
     display: flex;
     align-items: flex-start;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--tx-color-2);
     padding-bottom: 1rem;
 }
@@ -324,7 +331,7 @@
 .main .historia .contenedor .histo .info .info-i p {
     text-align: justify;
     color: var(--tx-color-title);
-    font-size: 1.09rem;
+    font-size: 1.3rem;
 }
 
 .main .historia .contenedor .histo .info .info-i .img {
@@ -342,7 +349,7 @@
 
 .sub-title h2 {
     color: var(--tx-color-2);
-    font-size: 1.9rem;
+    font-size: 2rem;
     text-align: center;
     padding: 2rem;
 }
@@ -368,12 +375,13 @@
 .main .historia .contenedor .histo .text .formas .info .info-1y2 h3 {
     color: var(--tx-color-2);
     padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .main .historia .contenedor .histo .text .formas .info .info-1y2 p {
     text-align: justify;
     color: var(--tx-color-title);
-    font-size: 1.09rem;
+    font-size: 1.3rem;
 }
 
 .main .historia .contenedor .histo .text .formas .info .info-1y2 .infoAll .img {
@@ -405,12 +413,13 @@
 .main .historia .contenedor .histo .text .formas .info .info-3 .infoAll h3 {
     color: var(--tx-color-2);
     padding-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .main .historia .contenedor .histo .text .formas .info .info-3 .infoAll p {
     text-align: justify;
     color: var(--tx-color-title);
-    font-size: 1.09rem;
+    font-size: 1.3rem;
 }
 
 .main .historia .contenedor .histo .text .formas .info .info-3 .infoAll .img {
@@ -444,14 +453,14 @@
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h3 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: left;
     color: var(--tx-color-2);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 400;
     padding: .5rem;
     text-align: center;
@@ -459,7 +468,7 @@
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h4 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 600;
     padding-bottom: .5rem;
     text-align: left;
@@ -467,7 +476,7 @@
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .contenido .formulas h5 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: justify;
     color: var(--tx-color-title);
@@ -491,20 +500,18 @@
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio p {
     color: var(--tx-color-title);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: .5rem;
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h3 {
     font-size: 1.4rem;
-    font-weight: 600;
     text-align: left;
     color: var(--tx-color-2);
 }
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h5 {
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.5rem;
     text-align: justify;
     color: var(--tx-color-p);
     margin-bottom: .3rem;
@@ -514,7 +521,6 @@
 
 .main .historia .contenedor .histo .text .marco-teorico .contenedor .cont .ejercicio h4 {
     font-size: 1.4rem;
-    font-weight: 600;
     text-align: left;
     color: var(--tx-color-2);
 }
@@ -530,7 +536,7 @@
 .main .desarrollo .contenedor .VyD .venYdes ul li{
     color: var(--tx-color-title);
     list-style: circle;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .main .desarrollo .contenedor .aplicaciones .contenido {
@@ -546,13 +552,25 @@
     justify-content: space-between;
 }
 
-.main .desarrollo .contenedor .aplicaciones .contenido .apli p {
-    color: var(--tx-color-title);
+.main .desarrollo .contenedor .aplicaciones .contenido .apli .img {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shadow);
+}
+
+.main .desarrollo .contenedor .aplicaciones .contenido .apli .sub-title h2 span {
+    color: var(--tx-color-p);
+}
+
+.main .desarrollo .contenedor .aplicaciones .contenido .apli .img img {
+    width: 100%;
+    height: 100%;
 }
 
 /* conclusion  */
 
 .main .conclusion .contenido {
+    margin: 4rem 0;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -564,7 +582,7 @@
 
 .main .conclusion .contenido .conclusion {
     background: var(--bg-color-main);
-    padding: 13%;
+    padding: 6%;
     border-radius: 50%;
     width: 11rem;
     height: 11rem;
@@ -590,8 +608,8 @@
     padding-top: 1rem;
     text-align: justify;
     font-size: .62rem;
-    font-weight: 600;
     color: var(--tx-color-title);
+    font-size: 0.7rem;
 }
 
 .main .conclusion .contenido .conclusion-1 {
@@ -615,14 +633,14 @@
 .main .conclusion .contenido .conclusion-2,
 .main .conclusion .contenido .conclusion-3,
 .main .conclusion .contenido .conclusion-4 {
-    transform: scale(1.5);
+    transform: scale(1.6);
 }
 
 .main .conclusion .contenido .conclusion-1:hover,
 .main .conclusion .contenido .conclusion-2:hover,
 .main .conclusion .contenido .conclusion-3:hover,
 .main .conclusion .contenido .conclusion-4:hover {
-    transform: scale(1.6);
+    transform: scale(1.8);
 }
 
 .main .despedida {
@@ -648,7 +666,7 @@
 }
 
 .main .despedida .fin h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: var(--tx-color-title);
     font-weight: 600;
 }
