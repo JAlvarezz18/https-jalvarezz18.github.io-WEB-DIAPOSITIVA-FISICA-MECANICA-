@@ -633,7 +633,7 @@
 
 .main .conclusion .contenido .conclusion {
     background: var(--bg-color-main);
-    padding: 6%;
+    padding: 10%;
     border-radius: 50%;
     width: 11rem;
     height: 11rem;
@@ -658,9 +658,8 @@
 .main .conclusion .contenido .conclusion p {
     padding-top: 1rem;
     text-align: justify;
-    font-size: .62rem;
     color: var(--tx-color-title);
-    font-size: 0.7rem;
+    font-size: 0.62rem;
 }
 
 .main .conclusion .contenido .conclusion-1 {
