@@ -594,6 +594,11 @@
     align-items: center;
 }
 
+.main .desarrollo .contenedor .formas .info .info-1y2 .infoAll .img {
+    width: 100%;
+    height: 100%;
+}
+
 .main .desarrollo .contenedor .formas .info .info-1y2 .infoAll .img img{
     width: 100%;
     margin-bottom: .5rem;
